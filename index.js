@@ -1,3 +1,12 @@
+// controls the home button in the nav menu
+const handleHome = function() {
+  $('.sidebar').on('click', '.home', e => {
+    e.preventDefault();
+    location.reload();
+  });
+};
+
+// controls the about-me button in the nav menu
 const handleAboutMe = function() {
   $('.sidebar').on('click', '.about-me', e => {
     e.preventDefault();
@@ -5,6 +14,7 @@ const handleAboutMe = function() {
   });
 };
 
+// controls the projects button in the nav menu
 const handleProjects = function() {
   $('.sidebar').on('click', '.projects', e => {
     e.preventDefault();
@@ -12,7 +22,44 @@ const handleProjects = function() {
   });
 };
 
+//generates the home page HTML
+const generateHomeHTML = function() {
+  $('.sidebar').html(
+    `
+    <nav class="nav1">
+      <hr class="divider" />
+            <button class="about-me">about me</button>
+            <button class="projects">projects</button>
+            <a class="github" href="https://github.com/AnthonyTB" target="blank_">github</a>
+            <a class="linkedin" href="https://www.linkedin.com/in/anthonytb/" target="blank_">linkedin</a>
+            <a class="email" href="mailto:anthonytb97@gmail.com">email</a>
+    </nav>
+  `
+  );
+  $('.container').html(
+    `
+    <header role="display" class="child">
+            <h1 class="headline">My names, <span>Anthony</span></h1>
+            <h2 class="headline-alt">I am a Full Stack developer with an espresso addiction</h2>
+    </header>
+  `
+  );
+};
+
+//generates the about-me page HTML
 const generateAboutMeHTML = function() {
+  $('.sidebar').html(
+    `
+    <nav class="nav2">
+     <hr class="divider" />
+            <button class="home">home</button>
+            <button class="projects">projects</button>
+            <a class="github" href="https://github.com/AnthonyTB" target="blank_">github</a>
+            <a class="linkedin" href="https://www.linkedin.com/in/anthonytb/" target="blank_">linkedin</a>
+            <a class="email" href="mailto:anthonytb97@gmail.com">email</a>
+    </nav>
+  `
+  );
   $('.container').html(
     `
     <section class="about-section">
@@ -27,7 +74,20 @@ const generateAboutMeHTML = function() {
   );
 };
 
+//generates the projects page HTML
 const generateProjectsHTML = function() {
+  $('.sidebar').html(
+    `
+    <nav class="nav2">
+     <hr class="divider" />
+            <button class="about-me">about me</button>
+            <button class="home">home</button>
+            <a class="github" href="https://github.com/AnthonyTB" target="blank_">github</a>
+            <a class="linkedin" href="https://www.linkedin.com/in/anthonytb/" target="blank_">linkedin</a>
+            <a class="email" href="mailto:anthonytb97@gmail.com">email</a>
+    </nav>
+  `
+  );
   $('.container').html(`
     <section class="project-sectionL">
       <div class="left-box">
@@ -48,7 +108,7 @@ const generateProjectsHTML = function() {
     </section>
     <section class="project-sectionR">
       <div class="left-box">
-        <img class="quiz-app-imgR" src="./imgs/bookmark-app1.png"></img> 
+        <img class="bookmark-app-imgR" src="./imgs/bookmark-app1.png"></img> 
       </div>
       <div class="right-box">
       <h3 class="project-titleR">Bookmarks App</h3>
@@ -77,17 +137,18 @@ const generateProjectsHTML = function() {
       </div>
       </div>
       <div class="right-box">
-        <img class="quiz-app-imgL" src="./imgs/parklist-app1.png"></img> 
+        <img class="park-app-imgL" src="./imgs/parklist-app1.png"></img> 
       </div>
     </section>
     `);
 };
 
-const render = function() {};
-
+//handles the button functions
 const runHandlers = function() {
+  handleHome();
   handleAboutMe();
   handleProjects();
 };
 
 runHandlers();
+generateHomeHTML();

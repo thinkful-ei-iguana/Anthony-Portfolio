@@ -25,23 +25,18 @@ body {
 }
 
 .sidebar {
-	position: fixed;
 	z-index: 10;
 }
 
 .divider {
 	border-color: #f2b632;
+	margin-top: 10%;
 }
 
 header {
 	padding: 12% 0;
 	height: 100vh;
-	margin-right: 40%;
-}
-
-.sig {
-	width: 300px;
-	height: auto;
+	margin-right: 10%;
 }
 
 .headline {
@@ -57,24 +52,39 @@ header {
 }
 
 .headline-alt {
-	font-size: calc(13px + 2vmin);
+	font-size: calc(9px + 2vmin);
 	font-family: 'Philosopher', sans-serif;
 	pointer-events: none;
+	width: 70%;
 	color: #f2b632;
 	position: absolute;
-	left: 0;
+	left: 30%;
 	right: 0;
+	text-align: left;
 }
 
 nav {
-	position: fixed;
-	right: -11%;
-	top: 32%;
-	transform: rotate(-90deg);
+	margin-bottom: 40%;
+}
+
+nav a {
+	font-size: calc(1px + 2vmin);
+	margin-right: 10px;
+	color: #c5c6c7;
+	transition: all 0.5s ease-out;
+	background: transparent;
+	border: 0;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #f2b632;
+	transition: all 0.5s ease-out;
 }
 
 nav button {
-	font-size: calc(-2px + 2vmin);
+	font-size: calc(1px + 2vmin);
 	margin-right: 10px;
 	color: #c5c6c7;
 	transition: all 0.5s ease-out;
@@ -104,27 +114,39 @@ nav button:hover {
 .about-writeup {
 	color: #c5c6c7;
 	font-family: 'Raleway', sans-serif;
-	width: 50%;
+	width: 70%;
 	position: absolute;
-	left: 31%;
+	left: 18%;
 	right: 0;
 	text-align: left;
+	font-size: calc(8px + 2vmin);
 }
 
 .quiz-app-imgL {
 	transition: all 0.5s ease-out;
-	width: 40%;
+	width: 100%;
 	margin-top: 10%;
-	margin-left: 15%;
 	-webkit-transform: scaleX(-1);
 	transform: scaleX(-1);
+	display: none;
 }
 
-.quiz-app-imgR {
+.bookmark-app-imgR {
 	transition: all 0.5s ease-out;
-	width: 40%;
+	width: 100%;
 	margin-top: 10%;
 	margin-left: 40%;
+	display: none;
+}
+
+.park-app-imgL {
+	transition: all 0.5s ease-out;
+	width: 100%;
+	margin-top: 10%;
+	margin-left: 25%;
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	display: none;
 }
 
 .project-sectionL {
@@ -148,17 +170,9 @@ nav button:hover {
 }
 
 .right-box {
-	display: flex;
-	flex-direction: column;
-	flex-basis: 100%;
-	flex: 1;
 }
 
 .left-box {
-	display: flex;
-	flex-direction: column;
-	flex-basis: 100%;
-	flex: 1;
 }
 
 .project-titleL {
@@ -171,9 +185,10 @@ nav button:hover {
 .projectL-writeup {
 	color: #c5c6c7;
 	font-family: 'Raleway', sans-serif;
-	width: 50%;
+	width: 80%;
 	text-align: left;
-	margin-left: 42%;
+	margin-left: 13%;
+	font-size: calc(8px + 2vmin);
 }
 
 .project-titleR {
@@ -187,9 +202,10 @@ nav button:hover {
 .projectR-writeup {
 	color: #c5c6c7;
 	font-family: 'Raleway', sans-serif;
-	width: 50%;
-	text-align: right;
+	width: 80%;
+	text-align: left;
 	margin-left: 12%;
+	font-size: calc(8px + 2vmin);
 }
 
 .button-row a {
@@ -207,3 +223,442 @@ nav button:hover {
 .live-button {
 	margin-left: 5%;
 }
+
+/* Begin tablet */
+@media only screen and (min-width: 768px) {
+	.sidebar {
+		position: fixed;
+		z-index: 10;
+	}
+
+	.divider {
+		border-color: #f2b632;
+		margin-top: 0;
+	}
+
+	header {
+		padding: 35% 0;
+		height: 100vh;
+		margin-right: 40%;
+	}
+
+	.headline {
+		color: #677077;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 100;
+		pointer-events: none;
+		font-size: calc(17px + 2vmin);
+	}
+
+	.headline span {
+		color: #f2b632;
+	}
+
+	.headline-alt {
+		font-size: calc(13px + 2vmin);
+		font-family: 'Philosopher', sans-serif;
+		pointer-events: none;
+		color: #f2b632;
+		position: absolute;
+		left: 0;
+		right: 0;
+		width: 60%;
+		margin-left: 25%;
+		text-align: left;
+	}
+
+	.nav1 {
+		position: fixed;
+		right: -21%;
+		top: 32%;
+		transform: rotate(-90deg);
+	}
+
+	.nav2 {
+		position: fixed;
+		right: -19%;
+		top: 32%;
+		transform: rotate(-90deg);
+	}
+
+	nav a {
+		font-size: calc(-2px + 2vmin);
+		margin-right: 10px;
+		color: #c5c6c7;
+		transition: all 0.5s ease-out;
+		background: transparent;
+		border: 0;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+
+	nav a:hover {
+		color: #f2b632;
+		transition: all 0.5s ease-out;
+	}
+
+	nav button {
+		font-size: calc(-2px + 2vmin);
+		margin-right: 10px;
+		color: #c5c6c7;
+		transition: all 0.5s ease-out;
+		background: transparent;
+		border: 0;
+		text-transform: uppercase;
+	}
+
+	nav button:hover {
+		color: #f2b632;
+		transition: all 0.5s ease-out;
+	}
+
+	.about-section {
+		padding: 12% 0;
+		height: 100vh;
+		margin-right: 30%;
+	}
+
+	.about-section h3 {
+		color: #f2b632;
+		font-size: calc(22px + 2vmin);
+		pointer-events: none;
+		font-family: 'Philosopher', sans-serif;
+	}
+
+	.about-writeup {
+		color: #c5c6c7;
+		font-family: 'Raleway', sans-serif;
+		width: 50%;
+		position: absolute;
+		left: 25%;
+		right: 0;
+		text-align: left;
+	}
+
+	.quiz-app-imgL {
+		transition: all 0.5s ease-out;
+		width: 50%;
+		margin-top: 10%;
+		margin-left: 25%;
+		-webkit-transform: scaleX(-1);
+		transform: scaleX(-1);
+		display: inline;
+	}
+
+	.bookmark-app-imgR {
+		transition: all 0.5s ease-out;
+		width: 50%;
+		margin-top: 10%;
+		margin-left: 20%;
+		display: inline;
+	}
+
+	.park-app-imgL {
+		transition: all 0.5s ease-out;
+		width: 50%;
+		margin-top: 10%;
+		margin-left: 25%;
+		-webkit-transform: scaleX(-1);
+		transform: scaleX(-1);
+		display: inline;
+	}
+
+	.project-sectionL {
+		padding: 12% 0;
+		height: 100vh;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.project-sectionR {
+		padding: 12% 0;
+		height: 100vh;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.right-box {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex: 1;
+	}
+
+	.left-box {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex: 1;
+	}
+
+	.project-titleL {
+		color: #f2b632;
+		font-size: calc(22px + 2vmin);
+		pointer-events: none;
+		font-family: 'Philosopher', sans-serif;
+	}
+
+	.projectL-writeup {
+		color: #c5c6c7;
+		font-family: 'Raleway', sans-serif;
+		width: 80%;
+		text-align: left;
+		margin-left: 32%;
+	}
+
+	.project-titleR {
+		color: #f2b632;
+		font-size: calc(22px + 2vmin);
+		pointer-events: none;
+		font-family: 'Philosopher', sans-serif;
+		margin-right: 6%;
+	}
+
+	.projectR-writeup {
+		color: #c5c6c7;
+		font-family: 'Raleway', sans-serif;
+		width: 80%;
+		text-align: right;
+		margin-left: 0;
+	}
+
+	.button-row a {
+		text-decoration: none;
+		color: #c5c6c7;
+		transition: all 0.5s ease-out;
+		font-size: calc(6px + 2vmin);
+	}
+
+	.button-row a:hover {
+		color: #f2b632;
+		transition: all 0.5s ease-out;
+	}
+
+	.live-button {
+		margin-left: 5%;
+	}
+}
+/* End tablet */
+
+/* Begin Desktop */
+@media only screen and (min-width: 1200px) {
+	.sidebar {
+		position: fixed;
+		z-index: 10;
+	}
+
+	.divider {
+		border-color: #f2b632;
+	}
+
+	header {
+		padding: 12% 0;
+		height: 100vh;
+		margin-right: 40%;
+	}
+
+	.headline {
+		color: #677077;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 100;
+		pointer-events: none;
+		font-size: calc(17px + 2vmin);
+	}
+
+	.headline span {
+		color: #f2b632;
+	}
+
+	.headline-alt {
+		font-size: calc(13px + 2vmin);
+		font-family: 'Philosopher', sans-serif;
+		pointer-events: none;
+		color: #f2b632;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin-left: 35%;
+		text-align: left;
+	}
+
+	.nav1 {
+		position: fixed;
+		right: -10%;
+		top: 32%;
+		transform: rotate(-90deg);
+	}
+
+	.nav2 {
+		position: fixed;
+		right: -9%;
+		top: 32%;
+		transform: rotate(-90deg);
+	}
+
+	nav a {
+		font-size: calc(-2px + 2vmin);
+		margin-right: 10px;
+		color: #c5c6c7;
+		transition: all 0.5s ease-out;
+		background: transparent;
+		border: 0;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+
+	nav a:hover {
+		color: #f2b632;
+		transition: all 0.5s ease-out;
+	}
+
+	nav button {
+		font-size: calc(-2px + 2vmin);
+		margin-right: 10px;
+		color: #c5c6c7;
+		transition: all 0.5s ease-out;
+		background: transparent;
+		border: 0;
+		text-transform: uppercase;
+	}
+
+	nav button:hover {
+		color: #f2b632;
+		transition: all 0.5s ease-out;
+	}
+
+	.about-section {
+		padding: 12% 0;
+		height: 100vh;
+		margin-right: 30%;
+	}
+
+	.about-section h3 {
+		color: #f2b632;
+		font-size: calc(22px + 2vmin);
+		pointer-events: none;
+		font-family: 'Philosopher', sans-serif;
+	}
+
+	.about-writeup {
+		color: #c5c6c7;
+		font-family: 'Raleway', sans-serif;
+		width: 50%;
+		position: absolute;
+		left: 31%;
+		right: 0;
+		text-align: left;
+	}
+
+	.quiz-app-imgL {
+		transition: all 0.5s ease-out;
+		width: 40%;
+		margin-top: 10%;
+		margin-left: 25%;
+		-webkit-transform: scaleX(-1);
+		transform: scaleX(-1);
+	}
+
+	.bookmark-app-imgR {
+		transition: all 0.5s ease-out;
+		width: 40%;
+		margin-top: 10%;
+		margin-left: 40%;
+	}
+
+	.park-app-imgL {
+		transition: all 0.5s ease-out;
+		width: 40%;
+		margin-top: 10%;
+		margin-left: 25%;
+		-webkit-transform: scaleX(-1);
+		transform: scaleX(-1);
+	}
+
+	.project-sectionL {
+		padding: 12% 0;
+		height: 100vh;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.project-sectionR {
+		padding: 12% 0;
+		height: 100vh;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.right-box {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex: 1;
+	}
+
+	.left-box {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex: 1;
+	}
+
+	.project-titleL {
+		color: #f2b632;
+		font-size: calc(22px + 2vmin);
+		pointer-events: none;
+		font-family: 'Philosopher', sans-serif;
+	}
+
+	.projectL-writeup {
+		color: #c5c6c7;
+		font-family: 'Raleway', sans-serif;
+		width: 50%;
+		text-align: left;
+		margin-left: 42%;
+	}
+
+	.project-titleR {
+		color: #f2b632;
+		font-size: calc(22px + 2vmin);
+		pointer-events: none;
+		font-family: 'Philosopher', sans-serif;
+		margin-right: 5%;
+	}
+
+	.projectR-writeup {
+		color: #c5c6c7;
+		font-family: 'Raleway', sans-serif;
+		width: 50%;
+		text-align: right;
+		margin-left: 12%;
+	}
+
+	.button-row a {
+		text-decoration: none;
+		color: #c5c6c7;
+		transition: all 0.5s ease-out;
+		font-size: calc(6px + 2vmin);
+	}
+
+	.button-row a:hover {
+		color: #f2b632;
+		transition: all 0.5s ease-out;
+	}
+
+	.live-button {
+		margin-left: 5%;
+	}
+}
+/* End Desktop */
