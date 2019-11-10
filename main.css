@@ -2,110 +2,208 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 ::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
+	width: 0px;
+	background: transparent;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 ul,
 li {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-  background-color: #252839;
-  text-align: center;
-  line-height: 1.5;
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;
+	background-color: #252839;
+	text-align: center;
+	line-height: 1.5;
 }
 
 .sidebar {
-  position: fixed;
-  z-index: 10;
+	position: fixed;
+	z-index: 10;
 }
 
 .divider {
-  border-color: #f2b632;
+	border-color: #f2b632;
 }
 
 header {
-  padding: 12% 0;
-  height: 100vh;
-  margin-right: 40%;
+	padding: 12% 0;
+	height: 100vh;
+	margin-right: 40%;
 }
 
 .sig {
-  width: 300px;
-  height: auto;
+	width: 300px;
+	height: auto;
 }
 
 .headline {
-  color: #677077;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 100;
-  pointer-events: none;
-  font-size: calc(17px + 2vmin);
+	color: #677077;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	pointer-events: none;
+	font-size: calc(17px + 2vmin);
 }
 
 .headline span {
-  color: #f2b632;
+	color: #f2b632;
 }
 
 .headline-alt {
-  font-size: calc(13px + 2vmin);
-  font-family: 'Philosopher', sans-serif;
-  pointer-events: none;
-  color: #f2b632;
-  position: absolute;
-  left: 0;
-  right: 0;
+	font-size: calc(13px + 2vmin);
+	font-family: 'Philosopher', sans-serif;
+	pointer-events: none;
+	color: #f2b632;
+	position: absolute;
+	left: 0;
+	right: 0;
 }
 
 nav {
-  position: fixed;
-  right: -11%;
-  top: 32%;
-  transform: rotate(-90deg);
+	position: fixed;
+	right: -11%;
+	top: 32%;
+	transform: rotate(-90deg);
 }
 
 nav button {
-  font-size: calc(-2px + 2vmin);
-  margin-right: 10px;
-  color: #c5c6c7;
-  transition: all 0.5s ease-out;
-  background: transparent;
-  border: 0;
-  text-transform: uppercase;
+	font-size: calc(-2px + 2vmin);
+	margin-right: 10px;
+	color: #c5c6c7;
+	transition: all 0.5s ease-out;
+	background: transparent;
+	border: 0;
+	text-transform: uppercase;
 }
 
 nav button:hover {
-  color: #f2b632;
-  transition: all 0.5s ease-out;
+	color: #f2b632;
+	transition: all 0.5s ease-out;
 }
 
 .about-section {
-  padding: 12% 0;
-  height: 100vh;
-  margin-right: 30%;
+	padding: 12% 0;
+	height: 100vh;
+	margin-right: 30%;
 }
 
 .about-section h3 {
-  color: #f2b632;
-  font-size: calc(22px + 2vmin);
-  pointer-events: none;
-  font-family: 'Philosopher', sans-serif;
+	color: #f2b632;
+	font-size: calc(22px + 2vmin);
+	pointer-events: none;
+	font-family: 'Philosopher', sans-serif;
 }
 
 .about-writeup {
-  color: #c5c6c7;
-  font-family: 'Raleway', sans-serif;
-  width: 50%;
-  position: absolute;
-  left: 30%;
-  right: 0;
+	color: #c5c6c7;
+	font-family: 'Raleway', sans-serif;
+	width: 50%;
+	position: absolute;
+	left: 31%;
+	right: 0;
+	text-align: left;
+}
+
+.quiz-app-imgL {
+	transition: all 0.5s ease-out;
+	width: 40%;
+	margin-top: 10%;
+	margin-left: 15%;
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+
+.quiz-app-imgR {
+	transition: all 0.5s ease-out;
+	width: 40%;
+	margin-top: 10%;
+	margin-left: 40%;
+}
+
+.project-sectionL {
+	padding: 12% 0;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.project-sectionR {
+	padding: 12% 0;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.right-box {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+}
+
+.left-box {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+}
+
+.project-titleL {
+	color: #f2b632;
+	font-size: calc(22px + 2vmin);
+	pointer-events: none;
+	font-family: 'Philosopher', sans-serif;
+}
+
+.projectL-writeup {
+	color: #c5c6c7;
+	font-family: 'Raleway', sans-serif;
+	width: 50%;
+	text-align: left;
+	margin-left: 42%;
+}
+
+.project-titleR {
+	color: #f2b632;
+	font-size: calc(22px + 2vmin);
+	pointer-events: none;
+	font-family: 'Philosopher', sans-serif;
+	margin-right: 5%;
+}
+
+.projectR-writeup {
+	color: #c5c6c7;
+	font-family: 'Raleway', sans-serif;
+	width: 50%;
+	text-align: right;
+	margin-left: 12%;
+}
+
+.button-row a {
+	text-decoration: none;
+	color: #c5c6c7;
+	transition: all 0.5s ease-out;
+	font-size: calc(6px + 2vmin);
+}
+
+.button-row a:hover {
+	color: #f2b632;
+	transition: all 0.5s ease-out;
+}
+
+.live-button {
+	margin-left: 5%;
 }
