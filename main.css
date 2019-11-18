@@ -375,7 +375,7 @@ header {
 
   .quiz-app-imgL {
     transition: all 0.5s ease-out;
-    width: 50%;
+    width: 80%;
     margin-top: 10%;
     margin-left: 25%;
     -webkit-transform: scaleX(-1);
@@ -385,9 +385,9 @@ header {
 
   .bookmark-app-imgR {
     transition: all 0.5s ease-out;
-    width: 50%;
+    width: 80%;
     margin-top: 10%;
-    margin-left: 20%;
+    margin-left: 0%;
     display: inline;
   }
 
@@ -401,7 +401,7 @@ header {
 
   .park-app-imgL {
     transition: all 0.5s ease-out;
-    width: 50%;
+    width: 80%;
     margin-top: 10%;
     margin-left: 25%;
     -webkit-transform: scaleX(-1);
