@@ -23,12 +23,15 @@ body {
   line-height: 1.5;
 }
 
+.active {
+  color: #f2b632 !important;
+}
+
 .sidebar {
   z-index: 10;
 }
 
-.nav1,
-.nav2 {
+.nav {
   text-align: center;
 }
 
@@ -47,32 +50,48 @@ header {
   font-family: "Raleway", sans-serif;
   font-weight: 100;
   pointer-events: none;
-  font-size: calc(17px + 2vmin);
+  font-size: calc(14px + 2vmin);
 }
 
 .headline span {
   color: #f2b632;
 }
 
+.stackR {
+  color: #c5c6c7;
+  font-size: calc(8px + 2vmin);
+}
+
+.stackL span {
+  color: #f2b632;
+  font-weight: 600;
+}
+
+.stackR span {
+  color: #f2b632;
+  font-weight: 600;
+}
+
+.stackL {
+  color: #c5c6c7;
+  font-size: calc(8px + 2vmin);
+}
+
 .headline-alt {
-  font-size: calc(9px + 2vmin);
+  font-size: calc(6px + 2vmin);
   font-family: "Philosopher", sans-serif;
   pointer-events: none;
   width: 70%;
   color: #f2b632;
   position: absolute;
-  left: 30%;
+  left: 20%;
   right: 0;
   text-align: left;
 }
 
-nav {
-  text-align: center;
-}
-
-nav a {
-  font-size: calc(1px + 2vmin);
-  margin-right: 10px;
+.nav a {
+  font-size: calc(3px + 2vmin);
+  margin-right: 4px;
   text-align: center;
   color: #c5c6c7;
   transition: all 0.5s ease-out;
@@ -80,26 +99,27 @@ nav a {
   border: 0;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0;
 }
 
-nav a:hover {
+.nav a:hover {
   color: #f2b632;
   transition: all 0.5s ease-out;
 }
 
-nav button {
-  font-size: calc(1px + 2vmin);
+.nav button {
+  font-size: calc(3px + 2vmin);
   text-align: center;
   color: #c5c6c7;
   transition: all 0.5s ease-out;
   background: transparent;
-  margin-right: 10px;
+  margin-right: 4px;
   border: 0;
   padding: 0;
   text-transform: uppercase;
 }
 
-nav button:hover {
+.nav button:hover {
   color: #f2b632;
   transition: all 0.5s ease-out;
 }
@@ -129,29 +149,35 @@ nav button:hover {
 
 .quiz-app-imgL {
   transition: all 0.5s ease-out;
-  width: 100%;
+  width: 60%;
   margin-top: 10%;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-  display: none;
 }
 
 .bookmark-app-imgR {
   transition: all 0.5s ease-out;
-  width: 100%;
+  width: 60%;
   margin-top: 10%;
-  margin-left: 40%;
+  margin-left: 0%;
   display: none;
+}
+
+.bookmark-app-imgRM {
+  transition: all 0.5s ease-out;
+  width: 60%;
+  margin-top: 10%;
+  margin-left: 0%;
+  display: block;
 }
 
 .park-app-imgL {
   transition: all 0.5s ease-out;
-  width: 100%;
+  width: 60%;
   margin-top: 10%;
-  margin-left: 25%;
+  margin-left: 0%;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-  display: none;
 }
 
 .project-sectionL {
@@ -159,10 +185,10 @@ nav button:hover {
   height: 100vh;
   align-items: center;
   justify-content: center;
-  display: flex;
-  margin-left: auto;
+  display: block;
   margin-right: auto;
   margin-left: 20%;
+  margin-bottom: 10%;
 }
 
 .project-sectionR {
@@ -170,16 +196,18 @@ nav button:hover {
   height: 100vh;
   align-items: center;
   justify-content: center;
-  display: flex;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-left: 20%;
 }
 
 .right-box {
+  display: block;
 }
 
 .left-box {
+  display: block;
 }
 
 .project-titleL {
@@ -363,6 +391,14 @@ nav button:hover {
     display: inline;
   }
 
+  .bookmark-app-imgRM {
+    transition: all 0.5s ease-out;
+    width: 60%;
+    margin-top: 10%;
+    margin-left: 0%;
+    display: none;
+  }
+
   .park-app-imgL {
     transition: all 0.5s ease-out;
     width: 50%;
@@ -466,11 +502,8 @@ nav button:hover {
 /* Begin Desktop */
 @media only screen and (min-width: 1200px) {
   .sidebar {
-    position: absolute;
-    top: 0;
-    right: 0;
     z-index: 10;
-    transform: rotate(0deg);
+    text-align: center;
   }
 
   .divider {
@@ -558,7 +591,7 @@ nav button:hover {
     height: 100vh;
     text-align: center;
     margin-left: 20%;
-    width: 70%;
+    width: 90%;
   }
 
   .about-section h3 {
@@ -578,25 +611,25 @@ nav button:hover {
 
   .quiz-app-imgL {
     transition: all 0.5s ease-out;
-    width: 40%;
+    width: 100%;
     margin-top: 10%;
-    margin-left: 25%;
+    margin-left: 5%;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
   }
 
   .bookmark-app-imgR {
     transition: all 0.5s ease-out;
-    width: 40%;
+    width: 100%;
     margin-top: 10%;
-    margin-left: 40%;
+    margin-left: 0%;
   }
 
   .park-app-imgL {
     transition: all 0.5s ease-out;
-    width: 40%;
+    width: 100%;
     margin-top: 10%;
-    margin-left: 25%;
+    margin-left: 5%;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
   }

@@ -24,18 +24,9 @@ const handleProjects = function() {
 
 //generates the home page HTML
 const generateHomeHTML = function() {
-  $(".sidebar").html(
-    `
-    <nav class="nav1">
-      <hr class="divider" />
-            <button class="about-me">about me</button>
-            <button class="projects">projects</button>
-            <a class="github" href="https://github.com/AnthonyTB" target="blank_">github</a>
-            <a class="linkedin" href="https://www.linkedin.com/in/anthonytb/" target="blank_">linkedin</a>
-            <a class="email" href="mailto:anthonytb97@gmail.com">email</a>
-    </nav>
-  `
-  );
+  $(".home").toggleClass("active");
+  $("button.about-me").removeClass("active");
+  $("button.projects").removeClass("active");
   $(".about-section").hide();
   $(".project-sectionL").hide();
   $(".project-sectionR").hide();
@@ -44,42 +35,27 @@ const generateHomeHTML = function() {
 
 //generates the about-me page HTML
 const generateAboutMeHTML = function() {
-  $(".sidebar").html(
-    `
-    <nav class="nav2">
-     <hr class="divider" />
-            <button class="home">home</button>
-            <button class="projects">projects</button>
-            <a class="github" href="https://github.com/AnthonyTB" target="blank_">github</a>
-            <a class="linkedin" href="https://www.linkedin.com/in/anthonytb/" target="blank_">linkedin</a>
-            <a class="email" href="mailto:anthonytb97@gmail.com">email</a>
-    </nav>
-  `
-  );
+  $("button.about-me").toggleClass("active");
+  $("button.projects").removeClass("active");
+  $("button.home").removeClass("active");
   $(".about-section").show();
   $(".project-sectionL").hide();
   $(".project-sectionR").hide();
   $(".child").hide();
+  $("button.about-me").toggleClss("active");
 };
 
 //generates the projects page HTML
 const generateProjectsHTML = function() {
-  $(".sidebar").html(
-    `
-    <nav class="nav2">
-     <hr class="divider" />
-            <button class="home">home</button>
-            <button class="about-me">about me</button>
-            <a class="github" href="https://github.com/AnthonyTB" target="blank_">github</a>
-            <a class="linkedin" href="https://www.linkedin.com/in/anthonytb/" target="blank_">linkedin</a>
-            <a class="email" href="mailto:anthonytb97@gmail.com">email</a>
-    </nav>
-  `
-  );
+  $("button.projects").toggleClass("active");
+  $("button.home").removeClass("active");
+  $("button.about-me").removeClass("active");
+
   $(".about-section").hide();
   $(".project-sectionL").show();
   $(".project-sectionR").show();
   $(".child").hide();
+  $("button.projects").toggleClss("active");
 };
 
 //handles the button functions
